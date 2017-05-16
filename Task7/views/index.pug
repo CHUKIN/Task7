@@ -12,9 +12,12 @@
                 .container-fluid
                     ul.nav.navbar-nav
                         li.active
+                            a(href='/') Главная пользователя
+                        li
                             a(href='/admin') Главная Администратора
                         li
                             a(href='/admin/create') Добавление новой записи
+                        
 
 
             #content
@@ -28,4 +31,5 @@
         script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
         
         script(src='/javascripts/components/grid.js')
+        script(src='/javascripts/components/view.js')
         script(src='/javascripts/main.js')

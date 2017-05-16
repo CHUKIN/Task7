@@ -34,6 +34,9 @@
     <Compile Include="public\javascripts\components\grid.js">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="public\javascripts\components\view.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="public\javascripts\main.js">
       <SubType>Code</SubType>
     </Compile>

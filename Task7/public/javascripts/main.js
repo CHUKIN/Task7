@@ -1,14 +1,11 @@
 ﻿page.base('/');
-page('/', admin);
+page('/', index);
 page('admin', admin);
 page('admin/create', adminCreate);
 page('*', def);
 page();
 function admin() {
     var container = $('#content');
-    //$.get('/getGrid', function (data) {
-    //    $('#content').html(data);
-    //});
     container.empty();
     $(container).append(getGrid());
 }
@@ -19,6 +16,12 @@ function adminCreate() {
 function def() {
     var container = document.querySelector('#content');
     container.innerHTML = "default";
+}
+
+function index() {
+    var container = $('#content');
+    container.empty();
+    $(container).append(getView());
 }
 
 
